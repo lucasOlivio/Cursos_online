@@ -1,0 +1,8 @@
+Outros sistemas salvam novos documentos de acordo com as diferenças encontradas:
+
+Exemplo: "A versão 2 guarda as diferenças do arquivo A e do arquivo B"
+Forma um pouco ruim, pois se for necessário voltar para da versão 5 para a 3 vou estar retornando somente as diferenças dos arquivos mudados. Outros arquivos não são chamados juntos.
+
+O git tira fotos dos estados dos arquivos em cada versão. Levando todos os arquivos versão a versão. Não copia o arquivo mas faz um link simbolico ao arquivo anterior. Consigo trabalhar em outras versões sem ter problemas em buscar os arquivos.
+
+Github é responsável por versionar os arquivos do projeto. O git trabalha com os estados dos arquivos.

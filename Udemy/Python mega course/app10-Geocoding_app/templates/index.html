@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> Super geocorder</title>
+  <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <h1>Generating localization from addresses</h1>
+        <h3>Upload a file on the .csv format</h3>
+        <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
+          <input type="file" name="file" > <br>
+          <button type="submit"> Submit </button>
+        </form>
+        {{ warning }}
+        {% include tabela ignore missing %}
+      </div>
+    </body>
+</html>
